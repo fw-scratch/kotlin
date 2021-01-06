@@ -1,7 +1,7 @@
-compiler/testData/javaModules/jdkModulesFromNamed/main/test.kt:11:24: error: unresolved reference: httpserver
-    val s: com.sun.net.httpserver.HttpServer? = null
-                       ^
-compiler/testData/javaModules/jdkModulesFromNamed/main/test.kt:12:5: error: overload resolution ambiguity:
+compiler/testData/javaModules/doNotLoadIrrelevantJars/main/test.kt:2:20: error: unresolved reference: ant
+    val x: com.sun.javafx.tools.ant.AntLog? = null
+                                ^
+compiler/testData/javaModules/doNotLoadIrrelevantJars/main/test.kt:3:5: error: overload resolution ambiguity:
 public inline fun println(message: Any?): Unit defined in kotlin.io
 public inline fun println(message: Boolean): Unit defined in kotlin.io
 public inline fun println(message: Byte): Unit defined in kotlin.io
@@ -12,6 +12,6 @@ public inline fun println(message: Float): Unit defined in kotlin.io
 public inline fun println(message: Int): Unit defined in kotlin.io
 public inline fun println(message: Long): Unit defined in kotlin.io
 public inline fun println(message: Short): Unit defined in kotlin.io
-    println(s)
+    println(x)
     ^
 COMPILATION_ERROR
