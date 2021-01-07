@@ -11,6 +11,7 @@ public final enum class SimpleEnum {
     public final enum static field A: SimpleEnum
     public final enum static field B: SimpleEnum
     public final enum static field C: SimpleEnum
+    private synthetic final static method $values(): SimpleEnum[]
     static method <clinit>(): void
     private method <init>(p0: java.lang.String, p1: int): void
     public static method valueOf(p0: java.lang.String): SimpleEnum
@@ -23,6 +24,7 @@ public final enum class WithAnnotations {
     private synthetic final static field $VALUES: WithAnnotations[]
     public final enum static @Ann field A: WithAnnotations
     public final enum static @Ann field B: WithAnnotations
+    private synthetic final static method $values(): WithAnnotations[]
     static method <clinit>(): void
     private method <init>(p0: java.lang.String, p1: int): void
     public static method valueOf(p0: java.lang.String): WithAnnotations
@@ -37,6 +39,7 @@ public final enum class WithConstructor {
     public final enum static field B: WithConstructor
     public final enum static field C: WithConstructor
     private final @org.jetbrains.annotations.NotNull field x: java.lang.String
+    private synthetic final static method $values(): WithConstructor[]
     static method <clinit>(): void
     private method <init>(p0: java.lang.String, p1: int, p2: java.lang.String): void
     public final @org.jetbrains.annotations.NotNull method getX(): java.lang.String
@@ -58,6 +61,7 @@ public abstract enum class WithEntryClass {
     private synthetic final static field $VALUES: WithEntryClass[]
     public final enum static field A: WithEntryClass
     final inner class WithEntryClass$A
+    private synthetic final static method $values(): WithEntryClass[]
     static method <clinit>(): void
     private method <init>(p0: java.lang.String, p1: int): void
     public synthetic method <init>(p0: java.lang.String, p1: int, p2: kotlin.jvm.internal.DefaultConstructorMarker): void
