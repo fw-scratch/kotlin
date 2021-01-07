@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+  repository_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: build
+      run: |
+        ./gradlew dist
+    - uses: actions/upload-artifact@v2
+      with:
+        name: kotlinc
+        path: dist/kotlinc/
